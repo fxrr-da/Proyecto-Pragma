@@ -1,0 +1,2170 @@
+.button {
+  position: absolute !important;
+  top: 8rem;
+  right: 4rem;
+  outline: none;
+  width: 18rem;
+  height: 3rem;
+  color: #91bbd5;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  transition: background 0.4s,
+    box-shadow 0.4s,
+    color 0.4s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.button i {
+  font-size: 1em;
+}
+
+.button a {
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #5591b6;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 30px;
+  height: 10px;
+  transition: width 0.4s, height 0.4s;
+  transition-delay: 0.4s;
+  border-radius: 1rem;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 30px;
+  height: 10px;
+  transition: width 0.4s, height 0.4s;
+  transition-delay: 0.4s;
+  border-radius: 1rem;
+}
+
+.button a:hover {
+
+  color: #fff;
+  transition-delay: 0.2s;
+}
+
+.button:hover {
+  background: #06456d;
+  color: #fff;
+  box-shadow: 0 0 30px #296f9a;
+  transition-delay: 0.2s;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.informacio {
+  display: none;
+  position: absolute;
+  width: 2rem;
+  color: #ffffff;
+  left: 30rem;
+  top: 9rem;
+  background-color: #fff;
+}
+
+.Containers {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.Captiontext {
+  color: #ffff;
+  font-size: 1.5em;
+  font-family: "Josefin Sans";
+  padding: 8px 12px;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  background-color: #2b6e98;
+  border-radius: 1rem;
+}
+
+.Back,
+.forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: #2b6e98;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+  z-index: 1111;
+}
+
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.Back:hover,
+.forward:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #2b6e98;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 2rem;
+}
+
+.active,
+.dot:hover {
+  background-color: #4aadeb;
+}
+
+.audio-on {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #2b6e98;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* escenario 1 */
+.img1-1 {
+  position: absolute !important;
+  border-radius: 2rem;
+  width: 100%;
+  top: 9rem;
+  height: 70vh;
+  background-size: cover;
+}
+
+.img1-2 {
+  position: absolute !important;
+  animation: shinin 1.4s infinite ease;
+  height: 80vh;
+  width: 100%;
+}
+
+@keyframes shinin {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.oculto {
+  display: none;
+}
+
+.img1-4 {
+  position: absolute !important;
+  width: 10rem;
+  top: 1rem;
+  right: -1rem;
+  animation: shoke 3s linear forwards;
+}
+
+@keyframes shoke {
+  0% {
+    transform: translate(30rem, -20rem);
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-70rem, 15rem);
+    opacity: 1;
+  }
+}
+
+#cometa {
+  animation-play-state: paused;
+
+}
+
+.circulo1 {
+  cursor: pointer;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 20rem;
+  left: 7.7rem;
+  z-index: 1;
+  animation: atención 1.5s ease alternate infinite;
+}
+
+.img1-3 {
+  width: 20rem;
+  position: absolute !important;
+  top: 20rem;
+  left: 8rem;
+  animation: scale-down 1.5s linear both infinite;
+}
+
+@keyframes scale-down {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.oculto {
+  display: none;
+}
+
+.txt-1 p {
+  margin-top: 0.5rem;
+}
+
+.txt-1 {
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  width: 25rem;
+  height: 10rem;
+  color: #003b60;
+  right: -50rem;
+  top: 15rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px #2b6e98;
+  font-weight: 800;
+  background-color: #8dc3e4a6;
+  border-radius: 2rem;
+}
+
+/* escenario 2 */
+.img2-8 {
+  background-image: url(escenarioscodigo/escenario2/cielo.png);
+  position: absolute;
+  width: 100%;
+  height: 30rem;
+  top: 7rem;
+  border-radius: 2rem;
+}
+
+.audio {
+  position: absolute;
+}
+
+.carouselItemEscenario2 {
+  position: absolute;
+  width: 100%;
+}
+
+.img2-3 {
+  position: absolute !important;
+  top: -9rem;
+  right: 18rem;
+  width: 12rem;
+}
+
+.img2-1 {
+  position: absolute;
+  width: 25rem;
+  top: 8rem;
+  height: 7rem;
+  animation: nb 3s ease-in-out alternate infinite;
+}
+
+@keyframes nb {
+  to {
+    transform: translateX(28rem);
+  }
+
+}
+
+.cometa-sce2 {
+  top: -7rem;
+  width: 140px;
+  animation: pasar 4s ease-in;
+
+}
+
+@keyframes pasar {
+  0% {
+    transform: translate(20rem, 12rem);
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-70rem, 14rem);
+    opacity: 1;
+  }
+}
+
+.img2-4 {
+  position: absolute !important;
+  border-radius: 2rem;
+  width: 100%;
+  top: 7rem;
+  height: 70vh;
+  background-size: cover;
+}
+
+.img2-5 {
+  position: absolute !important;
+  width: 90rem;
+  left: 10rem;
+  top: 20rem;
+  animation: wak 3s linear forwards;
+  animation-play-state: paused;
+}
+
+@keyframes wak {
+
+  100% {
+
+    transform: translate(1rem, -2rem);
+  }
+
+}
+
+.circulo2 {
+  cursor: pointer;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 28rem;
+  left: 14rem;
+  z-index: 1;
+  animation: atención 1.5s ease alternate infinite;
+}
+
+
+.img2-6 {
+  cursor: pointer;
+  position: absolute !important;
+  width: 20rem;
+  top: 18rem;
+  left: 7rem;
+  animation: pulsate-fwd 1.8s ease-in-out infinite both;
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* escenario 3 */
+.img3-1 {
+  background-image: url(escenarioscodigo/escenario3/callejon.png);
+  position: absolute !important;
+  border-radius: 2rem;
+  width: 100%;
+  top: 7rem;
+  height: 70vh;
+  background-size: cover;
+}
+
+.img3-2 {
+  position: absolute;
+  width: 10rem;
+  top: 7.5rem;
+  animation: n2 6s ease-in-out alternate infinite;
+}
+
+@keyframes n2 {
+  to {
+    transform: translateX(610px);
+  }
+
+}
+
+.circulo3 {
+  cursor: pointer;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 25rem;
+  left: 45em;
+  z-index: 1;
+  animation: atención 1s ease alternate infinite;
+}
+
+.img3-3 {
+  position: absolute;
+  width: 10rem;
+  top: 7.5rem;
+  right: 0;
+  animation: nb2 6s ease-in-out alternate infinite;
+}
+
+@keyframes nb2 {
+  to {
+    transform: translateX(-610px);
+  }
+
+}
+
+.character {
+  z-index: 111;
+  top: 27rem;
+  left: 25rem;
+  position: absolute;
+  width: 90px;
+  /* Ancho de cada cuadro de animación */
+  height: 135px;
+  /* Alto de cada cuadro de animación */
+  background-image: url('escenarioscodigo/escenario3/caminado-npc.png');
+  animation: walk 1.2s steps(4) infinite;
+  /* La animación se repetirá infinitamente */
+}
+
+@keyframes walk {
+  from {
+    background-position-x: 0;
+  }
+
+  /* Comenzamos desde el primer cuadro */
+  to {
+    background-position-x: -1935px;
+  }
+
+  /* Terminamos en el último cuadro */
+}
+
+.wlk1 {
+  position: absolute;
+  animation: camino-uno 9s linear forwards;
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+@keyframes camino-uno {
+  0% {
+    top: -6rem;
+    left: 20rem;
+    transform: scale(1.2);
+  }
+
+  50% {
+    top: -5rem;
+    left: 30rem;
+    transform: scale(1.1);
+  }
+
+  82% {
+    opacity: 1;
+    top: 1rem;
+    left: 75rem;
+    transform: scale(0.8);
+  }
+
+  100% {
+    top: 20rem;
+    left: 85rem;
+    transform: scale(0.5);
+
+  }
+}
+
+.txt3 {
+  position: absolute;
+  top: 19rem;
+  left: 45rem;
+  z-index: 1;
+  width: 5rem;
+  border-radius: 2rem;
+  animation: mov 1s linear forwards;
+}
+
+@keyframes mov {
+  to {
+    left: 60rem;
+    opacity: 0;
+  }
+
+}
+
+/* escenario 4 */
+.img4-1 {
+  position: absolute !important;
+  border-radius: 2rem;
+  width: 100%;
+  top: 7rem;
+  height: 70vh;
+  background-size: cover;
+
+}
+
+.img4-2 {
+  position: absolute !important;
+  top: 7.6rem;
+  width: 50rem;
+  
+  height: 8rem;
+  animation: pasando 4s infinite ease alternate;
+}
+
+@keyframes pasando {
+
+  to {
+    transform: translateX(700px);
+  }
+}
+
+.img4-3 {
+  position: absolute !important;
+  width: 65rem;
+  top: 3rem;
+  left: 10rem;
+  animation: fall 2s infinite ease alternate;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(5.8rem);
+  }
+}
+
+.img4-5 {
+  position: absolute !important;
+  width: 80rem;
+  top: -1rem;
+  animation: rio 2s infinite alternate;
+}
+
+@keyframes rio {
+ 
+  to {
+    transform: translate(6rem, -1rem);
+  }
+}
+
+.img4-6 {
+  position: absolute;
+  width: 10rem;
+  top: 22rem;
+  left: 47rem;
+  animation: ew 3s ease forwards ;
+}
+
+.img4-7 {
+  position: absolute;
+  width: 10rem;
+  top: 21rem;
+  left: 47rem;
+  animation: ew 3s ease forwards;
+}
+
+@keyframes ew {
+  0% {
+    transform: translate(1px);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-120px, 20px);
+    opacity: 0;
+  }
+}
+
+.img4-12 {
+  position: absolute !important;
+  top: 10rem;
+  left: 32rem;
+  width: 25rem;
+  animation: metado 3s ease forwards, fighter 5s forwards 6s;
+}
+
+@keyframes fighter {
+  0% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes metado {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(17rem);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.img4-9 {
+  position: absolute !important;
+  width: 7rem;
+  top: 19rem;
+  left: 45rem;
+  animation: meta2 5s ease forwards alternate, fight2 2s forwards 5s;
+}
+
+.img4-10 {
+  position: absolute !important;
+  width: 7rem;
+  top: 19rem;
+  left: 40rem;
+  animation: meta2 5s ease forwards alternate, fight2 2s forwards 5s;
+
+}
+
+.img4-11 {
+  position: absolute !important;
+  width: 7rem;
+  top: 19rem;
+  left: 35rem;
+  animation:
+    meta2 5s ease forwards alternate, fight2 2s forwards 5s;
+}
+
+@keyframes meta2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fight2 {
+  to {
+    opacity: 0;
+  }
+}
+
+.character2 {
+  z-index: 111;
+  top: 30rem;
+  left: 18rem;
+  position: absolute;
+  width: 80px;
+  /* Ancho de cada cuadro de animación */
+  height: 135px;
+  /* Alto de cada cuadro de animación */
+  background-image: url('escenarioscodigo/escenario4/caminado-npc.png');
+  animation: walk2 2s steps(8) infinite, fight2 2s forwards 5s;
+  /* La animación se repetirá infinitamente */
+}
+
+@keyframes walk2 {
+  from {
+    background-position-x: 0;
+  }
+
+  /* Comenzamos desde el primer cuadro */
+  to {
+    background-position-x: -1935px;
+  }
+
+  /* Terminamos en el último cuadro */
+}
+
+.wlk2 {
+  position: absolute;
+  animation: camino-un2 6s ease forwards;
+}
+
+@keyframes camino-un2 {
+
+  0% {
+    top: -10rem;
+    left: 7rem;
+    transform: scale(1.3);
+  }
+
+  50% {
+    top: 5rem;
+    left: 28rem;
+    transform: scale(0.9);
+  }
+
+  100% {
+    top: 6rem;
+    left: 30rem;
+    transform: scale(0.7);
+  }
+}
+
+.character22 {
+  z-index: 111;
+  top: 25rem;
+  left: 50rem;
+  position: absolute;
+  width: 78px;
+  /* Ancho de cada cuadro de animación */
+  height: 90px;
+  /* Alto de cada cuadro de animación */
+  background-image: url('escenarioscodigo/escenario4/npc-frontal.png');
+  animation: walk21 2s steps(8) infinite;
+  /* La animación se repetirá infinitamente */
+}
+
+@keyframes walk21 {
+  from {
+    background-position-x: 0;
+  }
+
+  /* Comenzamos desde el primer cuadro */
+  to {
+    background-position-x: -1930px;
+  }
+
+  /* Terminamos en el último cuadro */
+}
+
+.wlk22 {
+  position: absolute;
+  animation: camino-un3 6s ease forwards infinite;
+}
+
+@keyframes camino-un3 {
+  0% {
+    transform: translate(-2rem, -10rem);
+  }
+
+  50% {
+    transform: translate(-4rem, -5rem);
+  }
+
+  100% {
+    transform: translate(-4rem, 2rem);
+  }
+}
+
+.circulo4 {
+  cursor: pointer;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 24rem;
+  left: 40rem;
+  z-index: 1;
+  animation: ver1 13s ease forwards, atención 1s ease alternate infinite;
+}
+
+@keyframes ver1 {
+  0% {
+    opacity: 0;
+  }
+
+  69% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* escenario 5 */
+.circulo5 {
+  cursor: pointer;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 19rem;
+  right: 8rem;
+  z-index: 1;
+  animation: atención 1s ease alternate infinite;
+}
+
+
+
+.img5-1 {
+  background-image: url(escenarioscodigo/escenario2/cielo.png);
+  position: absolute;
+  width: 100%;
+  height: 34rem;
+  top: 7rem;
+  border-radius: 2rem;
+}
+
+.img5-2 {
+  position: absolute !important;
+  height: 34rem;
+  top: 7rem;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.img5-3 {
+  position: absolute;
+  width: 25rem;
+  top: 8rem;
+  height: 7rem;
+  animation: n3 6s ease-in-out alternate infinite;
+}
+
+@keyframes n3 {
+  to {
+    transform: translateX(610px);
+  }
+
+}
+
+.img5-4 {
+  position: absolute;
+  width: 44rem;
+  top: 8rem;
+  left: 25rem;
+  z-index: 1;
+  animation: walkn 3s ease forwards;
+}
+
+@keyframes walkn {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  100% {
+    transform: translateY(1rem);
+  }
+}
+
+.img5-5 {
+  position: absolute;
+  width: 15rem;
+  top: 20rem;
+  left: 20rem;
+  animation: pulsate-bck 1s ease-in-out infinite both;
+}
+
+.img5-6 {
+  position: absolute;
+  width: 12rem;
+  top: 25rem;
+  left: 12rem;
+  animation: pulsate-bck 1s ease-in-out infinite both;
+}
+
+.img5-7 {
+  position: absolute;
+  width: 14rem;
+  top: 19rem;
+  left: 30rem;
+  animation: pulsate-bck 1s ease-in-out infinite both;
+}
+
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.img5-8 {
+  position: absolute;
+  width: 19rem;
+  top: 15rem;
+  right: 8rem;
+  animation: ritual1 1s ease-in-out alternate infinite;
+}
+
+@keyframes ritual1 {
+  from {
+    transform: translate(1rem, 1rem);
+  }
+
+  to {
+    transform: translate(2rem, 2rem);
+  }
+}
+
+.img5-9 {
+  position: absolute;
+  width: 27rem;
+  top: 17rem;
+  right: 2rem;
+  animation: ritual2 1s ease-out alternate infinite;
+}
+
+@keyframes ritual2 {
+  from {
+    transform: translate(1rem, 1rem);
+  }
+
+  to {
+    transform: translate(2rem, 2rem);
+  }
+}
+
+.img5-10 {
+  position: absolute;
+  width: 27rem;
+  top: 16rem;
+  right: -1rem;
+  animation: ritual3 1s ease-in alternate infinite;
+}
+
+@keyframes ritual3 {
+  from {
+    transform: translate(1rem, 1rem);
+  }
+
+  to {
+    transform: translate(2rem, 2rem);
+  }
+}
+
+.txt5-3 {
+  position: absolute;
+  top: 7rem;
+  left: -0.1rem;
+  z-index: 1;
+  width: 35rem;
+  background-color: #6ab0b8;
+  border-radius: 2rem
+}
+
+.txt5-3 p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 2rem;
+  color: #000;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1.5s;
+}
+
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 0.5em;
+
+    transform: translateZ(100px);
+
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.txt5-2 {
+  position: absolute;
+  top: 28rem;
+  right: 12rem;
+  z-index: 1;
+  width: 7rem;
+}
+
+.txt5-2 p {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 20px;
+}
+
+.txt5 {
+  position: absolute;
+  top: 22rem;
+  left: 49rem;
+  z-index: 1;
+  width: 20rem;
+  height: 3.5rem;
+  background-color: #6ab0b8;
+  border-radius: 2rem;
+}
+
+.txt5 p {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 20px;
+  animation: txt5p 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1s;
+}
+
+@keyframes txt5p {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0.8;
+  }
+
+  100% {
+    letter-spacing: 0.2em;
+    opacity: 1;
+  }
+}
+
+
+.img6-1 {
+  position: absolute !important;
+  height: 75vh;
+  top: 7rem;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.img6-2 {
+  position: absolute !important;
+  top: 4rem;
+  border-radius: 2rem;
+  width: 100%;
+  animation: flicker-1 2s linear infinite both;
+}
+
+.img6-3 {
+  position: absolute !important;
+  top: -12rem;
+  border-radius: 2rem;
+  width: 100%;
+  left: -1.5rem;
+  animation: levitar 5s ease forwards;
+}
+
+@keyframes levitar {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5rem);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.img6-4 {
+  position: absolute !important;
+  top: 10rem;
+  left: 55rem;
+  width: 38rem;
+  animation: waja 3s ease forwards;
+}
+
+@keyframes waja {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.img6-5 {
+  position: absolute !important;
+  top: 7rem;
+  left: 5rem;
+  width: 70rem;
+  animation: aparecer 6s ease, caminito 3s ease 5s forwards;
+}
+
+@keyframes caminito {
+  0% {
+    transform: translateX(0);
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(45rem);
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.txt6-2 {
+  position: absolute;
+  top: 25rem;
+  left: 25rem;
+  width: 6rem;
+  background-color: #6ab0b8;
+  border-radius: 2rem;
+  animation: q 5s ease, qq 2s ease 4s forwards;
+}
+
+@keyframes q {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes qq {
+  to {
+    opacity: 0;
+  }
+}
+
+.txt6-2 p {
+  text-align: center;
+  margin-top: 1.1rem;
+  font-size: 22px;
+}
+
+.txt6 {
+  position: absolute;
+  top: 15rem;
+  left: 55rem;
+  z-index: 1;
+  width: 22rem;
+  height: 6rem;
+  background-color: #6ab0b8;
+  border-radius: 2rem;
+  animation: txt6 4s ease forwards;
+}
+
+@keyframes txt6 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.txt6 p {
+  text-align: center;
+  margin-top: 1.1rem;
+  font-size: 20px;
+}
+
+.img7-1 {
+  position: absolute !important;
+  height: 75vh;
+  top: 7rem;
+  border-radius: 2rem;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.img7-2 {
+  position: absolute !important;
+  top: 8rem;
+  left: -35rem;
+  width: 70rem;
+  animation: wln 3s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes wln {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(39rem);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(39rem);
+  }
+}
+
+.circulo7 {
+  cursor: pointer;
+  height: 14rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 19rem;
+  left: 39rem;
+  width: 14rem;
+  z-index: 1;
+  animation: atención 1s ease alternate infinite;
+}
+
+
+.img7-3 {
+  position: absolute !important;
+  top: 12rem;
+  left: 6rem;
+  width: 70rem;
+  animation: atacar 4s forwards;
+  animation-play-state: paused;
+}
+
+@keyframes atacar {
+  0% {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-14rem, 14rem);
+  }
+}
+
+.img7-4 {
+  cursor: pointer;
+  position: absolute !important;
+  top: 16rem;
+  left: 38rem;
+  width: 20rem;
+  animation: desaparece 2s ease forwards;
+  animation-delay: 2s;
+  animation-play-state: paused;
+}
+
+@keyframes desaparece {
+  to {
+    opacity: 0;
+  }
+}
+
+.img7-5 {
+  position: absolute;
+  width: 40rem;
+  top: 6rem;
+  left: 17rem;
+  animation: pelea1 6s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes pelea1 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale(20rem);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.txt7 {
+  position: absolute;
+  top: 25rem;
+  left: 12rem;
+  z-index: 1;
+  width: 20rem;
+  height: 4rem;
+  background-color: #ffff;
+  border-radius: 2rem;
+  animation: txt7 3s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes txt7 {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+}
+
+.txt7 p {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.img7-6 {
+  position: absolute;
+  width: 30rem;
+  top: 22rem;
+  left: 40rem;
+  animation: aparecer 5s ease;
+  animation-play-state: paused;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.img7-7 {
+  position: absolute;
+  width: 20rem;
+  top: 12rem;
+  left: 60rem;
+}
+
+.img8-1 {
+  position: absolute !important;
+  border-radius: 2rem;
+  width: 100%;
+  top: 7rem;
+  height: 70vh;
+  background-size: cover;
+}
+
+.button a {
+  z-index: 1111;
+  cursor: pointer;
+}
+
+.img8-3 {
+  cursor: pointer;
+  position: absolute !important;
+  top: -15rem;
+  left: -34rem;
+  width: 70rem;
+  animation: wlkq 10s ease-out forwards;
+}
+
+@keyframes wlkq {
+  0% {
+    transform: translateX(10rem, 1rem);
+  }
+
+  100% {
+    transform: translate(32rem, 19rem);
+  }
+}
+
+.circulo8 {
+  cursor: pointer;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 25rem;
+  left: 22rem;
+  z-index: 1;
+  animation: aparecer2 9s linear forwards, atención 1s ease alternate infinite;
+}
+
+@keyframes aparecer2 {
+  0% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.wat2 {
+  position: absolute;
+  top: 13rem;
+  right: 13rem;
+  z-index: 1;
+  width: 5rem;
+  border-radius: 2rem;
+}
+
+.img8-4 {
+  position: absolute !important;
+  width: 15rem;
+  top: 18rem;
+  right: 5rem;
+  animation: vuelito 3s ease alternate infinite, wtf 2s ease 14s forwards;
+}
+
+@keyframes wtf {
+  to {
+    transform: translateX(-18rem);
+  }
+}
+
+@keyframes trampa {
+  to {
+    transform: translateX(-18rem);
+  }
+}
+
+.img8-5 {
+  position: absolute !important;
+  width: 10rem;
+  top: 10rem;
+  right: 20rem;
+  animation: vuelito 3s ease alternate infinite, trampa 2s ease 3s forwards;
+}
+
+@keyframes vuelito {
+  0% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    transform: translateY(5rem);
+  }
+}
+
+.img8-6 {
+  position: absolute !important;
+  top: 9rem;
+  z-index: 1;
+  width: 25rem;
+  right: 1rem;
+  height: 4rem;
+  animation: passs 2s infinite ease alternate;
+}
+
+@keyframes passs {
+  from {
+    transform: translateX(-1px);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.img8-7 {
+  position: absolute !important;
+  top: 7rem;
+  z-index: 1;
+  width: 50rem;
+  left: 0rem;
+}
+
+.img8-8 {
+  position: absolute !important;
+  width: 3rem;
+  top: 14rem;
+  left: 2rem;
+  animation: carnada 1.11s ease-in forwards;
+  animation-delay: 2s;
+}
+
+@keyframes carnada {
+  to {
+    transform: translate(34rem, 19rem);
+  }
+}
+
+.img8-9 {
+  position: absolute;
+  width: 20rem;
+  top: 26rem;
+  left: 35rem;
+  animation: aparecer 2s ease;
+  animation-play-state: paused;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.img8-10 {
+  position: absolute;
+  width: 20rem;
+  top: 16rem;
+  left: 55rem;
+}
+
+.img8-11 {
+  position: absolute;
+  width: 20rem;
+  top: 16rem;
+  left: 75rem;
+}
+
+.txt8 {
+  position: absolute;
+  top: 29rem;
+  left: 15rem;
+  z-index: 1;
+  width: 20rem;
+  height: 6rem;
+  background-color: #ffff;
+  border-radius: 2rem;
+  animation: txt8 5s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes txt8 {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+}
+
+.txt8 p {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.img9-1 {
+  position: absolute !important;
+  height: 75vh;
+  top: 7rem;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.img9-2 {
+  position: absolute !important;
+  top: 5rem;
+  animation: flicker-1 2s linear infinite both;
+}
+
+
+@keyframes flicker-1 {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  41.99% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 0;
+  }
+
+  43% {
+    opacity: 0;
+  }
+
+  43.01% {
+    opacity: 1;
+  }
+
+  47.99% {
+    opacity: 1;
+  }
+
+  48% {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  49.01% {
+    opacity: 1;
+  }
+}
+
+.circulo9 {
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 23rem;
+  left: 12rem;
+  z-index: 1;
+  animation: atención 1s ease alternate infinite, levitar9 3.5s linear forwards alternate infinite;
+}
+
+@keyframes atención {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: linear;
+
+  }
+
+  10% {
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: linear;
+  }
+
+  17% {
+    transform: scale(0.96);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: linear;
+  }
+
+  33% {
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: linear;
+  }
+
+  60% {
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: linear;
+  }
+}
+
+.img9-3 {
+  position: absolute !important;
+  top: 18em;
+  width: 30rem;
+  left: 17rem;
+}
+
+.img9-4 {
+  position: absolute !important;
+  top: 13rem;
+  left: 900px;
+  width: 60rem;
+  animation: entrada2 2.5s linear forwards;
+}
+
+@keyframes entrada2 {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-180px);
+  }
+}
+
+.img9-5 {
+  position: absolute !important;
+  top: 23rem;
+  border-radius: 2rem;
+  width: 18rem;
+  left: 9rem;
+  animation: levitar9 3.5s linear forwards alternate infinite;
+}
+
+@keyframes levitar9 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5rem);
+  }
+}
+
+.txt9 {
+  position: absolute;
+  top: 21rem;
+  left: 20rem;
+  z-index: 1;
+  width: 14rem;
+  height: 5rem;
+  background-color: #6ab0b8;
+  border-radius: 2rem;
+  animation: txt9 6s ease forwards;
+}
+
+@keyframes txt9 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.txt9 p {
+  text-align: center;
+  margin-top: 1.1rem;
+  font-size: 20px;
+}
+
+.img10-1 {
+  background-image: url(escenarioscodigo/escenario10/cielo.png);
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  top: 7rem;
+  border-radius: 2rem;
+  animation: zoom 2s linear 3s forwards;
+}
+
+@keyframes zoom {
+  to {
+    top: 12rem;
+    transform: scale(1.3);
+  }
+}
+
+.img10-2 {
+  position: absolute !important;
+  height: 70vh;
+  top: 7rem;
+  border-radius: 2rem;
+  width: 100%;
+  animation: zoom 2s linear 3s forwards;
+}
+
+
+.img10-3 {
+  position: absolute !important;
+  top: 14rem;
+  left: 27rem;
+  width: 40rem;
+  animation: caminando 2s linear forwards, desaparece 2s ease 2s forwards;
+}
+
+@keyframes caminando {
+  to {
+    transform: translateY(-5rem) scale(0.8);
+  }
+}
+
+.img10-4 {
+  position: absolute !important;
+  top: 16rem;
+  left: 2rem;
+  width: 60rem;
+  z-index: 1;
+  animation: caminando 2s linear forwards, desaparece 2s ease 2s forwards;
+}
+
+.img10-5 {
+  position: absolute;
+  width: 15rem;
+  top: 22rem;
+  left: 20rem;
+  animation: q1 2s linear 3s forwards, desaparece 2s linear 6s forwards;
+}
+
+.img10-6 {
+  position: absolute;
+  width: 15rem;
+  top: 22rem;
+  left: 47rem;
+  animation: q1 2s linear 3s forwards, desaparece 2s linear 6s forwards;
+}
+
+@keyframes q1 {
+  to {
+    top: 27rem;
+  }
+}
+
+.img10-7 {
+  position: absolute;
+  width: 15rem;
+  top: 22rem;
+  left: 34rem;
+  animation: q1 2s linear 3s forwards, desaparece 2s linear 6s forwards;
+}
+
+.img10-8 {
+  position: absolute !important;
+  top: 9rem;
+  z-index: 1;
+  width: 40rem;
+  left: 2rem;
+  height: 5rem;
+  animation: pass 8s infinite ease backwards;
+}
+
+@keyframes pass {
+  to {
+    transform: translateX(23rem);
+  }
+}
+
+.img10-10 {
+  position: absolute;
+  width: 10rem;
+  top: 28rem;
+  left: 47rem;
+  animation: ver 5.5s linear forwards, done 1s linear 6s forwards;
+}
+
+@keyframes done {
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes ver {
+  0% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 27rem;
+    left: 46rem;
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+.img10-9 {
+  position: absolute;
+  width: 10rem;
+  top: 28rem;
+  left: 47rem;
+  animation: ver 5.5s linear forwards, desaparece 2s linear 6s forwards;
+}
+
+.img10-11 {
+  position: absolute;
+  width: 10rem;
+  top: 28rem;
+  left: 35rem;
+  animation: ver 5.5s linear forwards, desaparece 2s linear 6s forwards;
+}
+
+@keyframes done {
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes ver {
+  0% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+.img10-12 {
+  position: absolute;
+  width: 10rem;
+  top: 28rem;
+  left: 35rem;
+  animation: ver 5.5s linear forwards, done 1s linear 6s forwards;
+}
+
+.img10-13 {
+  position: absolute;
+  width: 10rem;
+  top: 26rem;
+  left: 20rem;
+  animation: ver 5.5s linear forwards, desaparece 2s linear 6s forwards;
+}
+
+@keyframes done {
+  to {
+    transform: scale(0);
+  }
+}
+
+.img10-14 {
+  position: absolute;
+  width: 10rem;
+  top: 26rem;
+  left: 20rem;
+  animation: ver 5.5s linear forwards, done 1s linear 6s forwards;
+}
+
+.img10-15 {
+  position: absolute;
+  width: 25rem;
+  top: 28rem;
+  left: 20rem;
+  animation: bounce 1.3s both infinite;
+  animation-play-state: paused;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+.circulo10 {
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 27.4rem;
+  left: 35rem;
+  z-index: 1;
+  animation: aparecer2 9s linear forwards, atención 1s ease alternate infinite;
+}
+
+.img10-16 {
+  position: absolute;
+  width: 29rem;
+  top: 30rem;
+  left: 34rem;
+  animation: bounce 1.3s both infinite;
+  animation-play-state: paused;
+}
+
+.img10-17 {
+  position: absolute;
+  width: 34rem;
+  top: 22rem;
+  left: 42rem;
+  animation: bounce 1.3s both infinite;
+  animation-play-state: paused;
+}
+
+.txt10 {
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  width: 25rem;
+  height: 12rem;
+  color: #003b60;
+  left: 30rem;
+  top: 7rem;
+  z-index: 111;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px #2b6e98;
+  font-weight: 800;
+  background-color: #8dc3e4a6;
+  border-radius: 2rem;
+}
+
+.txt10 p {
+  margin-top: 0.1rem;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1.5s;
+}

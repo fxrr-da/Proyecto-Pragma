@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómic</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <div class="slideshow-container">
+    <div class="Containers">
+      <div class="Captiontext">Escena 1</div>
+      <div style="text-align:center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <!-- Add more dots here -->
+      </div>
+      <img src="./escenarioscodigo/escenario1/espacio.png" class="img1-1 " alt="...">
+      <img src="./escenarioscodigo/escenario1/stars.png" class="img1-2" alt="...">
+      <img id="tierra" src="./escenarioscodigo/escenario1/earth.png" class="img1-3 " alt="...">
+      <img id="cometa" src="./escenarioscodigo/escenario1/cometa.png" class="img1-4 oculto" alt="...">
+      <div class="txt-1 txt-animar oculto">
+        <p>Cuando los zancudos amenazan con contagiarnos de virus a todas las personas, la salvación
+          está en manos de un mono androide. ¿Estás listo para la aventura?</p>
+      </div>
+      <audio controls class="audio1 oculto">
+        <source src="escenarioscodigo/escenario1/cometa.mp3" type="audio/mpeg">
+      </audio>
+      <div class="circulo1"></div>
+      <ul class="button">
+        <a class="home" href="#"> <i class="bi bi-house-fill"></i></a>
+        <a id="play-button1"><i class="bi bi-volume-up"></i></a>
+        <a id="stop-button1"><i class="bi bi-volume-mute"></i></a>
+
+      </ul>
+    </div>
+
+    <div class="Containers">
+      <div class="Captiontext">Escena 2</div>
+      <div style="text-align:center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <!-- Add more dots here -->
+      </div>
+      <div class="img2-8" alt="..."></div>
+      <img src="./escenarioscodigo/escenario2/pueblo.png" class="img2-4" alt="...">
+      <img class="img2-1" src="./escenarioscodigo/escenario2/nb.png" alt="...">
+      <img class="img2-3 " src="./escenarioscodigo/escenario2/cometa-choque.png" alt="...">
+      <img class="img2-5 oculto" src="./escenarioscodigo/escenario2/personajes-extras.png" alt="...">
+      <img class="img2-6" src="./escenarioscodigo/escenario2/maceta.png" alt="...">
+      <audio controls class="audio22 oculto">
+        <source src="escenarioscodigo/escenario2/cometa.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls class="audio2 oculto">
+        <source src="escenarioscodigo/escenario2/sorprendidos1.mp3" type="audio/mpeg">
+      </audio>
+      <div class="circulo2"></div>
+      <ul class="button">
+        <a class="home" href="#"> <i class="bi bi-house-fill"></i></a>
+        <a id="play-button12"><i class="bi bi-volume-up"></i></a>
+        <a id="stop-button12"><i class="bi bi-volume-mute"></i></a>
+
+      </ul>
+    </div>
+    <div class="Containers">
+      <div class="Captiontext">Escena 3</div>
+      <div style="text-align:center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <!-- Add more dots here -->
+      </div>
+      <img src="./escenarioscodigo/escenario3/callejon.png" class="img3-1" alt="">
+      <img src="./escenarioscodigo/escenario3/nube1.png" class="img3-2" alt="">
+      <img src="./escenarioscodigo/escenario3/nube2.png" class="img3-3" alt="">
+      <div class="wlk1 oculto">
+        <div class="character "></div>
+      </div>
+      <audio controls class="audio3 oculto">
+        <source src="escenarioscodigo/escenario3/huh.mp3" type="audio/mpeg">
+      </audio>
+      <div class="circulo3"></div>
+      <div class="txt3 oculto">
+        <p>
+          <img src="escenarioscodigo/escenario3/wat.png" alt="">
+        </p>
+      </div>
+      <ul class="button">
+        <a class="home" href="#"> <i class="bi bi-house-fill"></i></a>
+        <a id="play-button13"><i class="bi bi-volume-up"></i></a>
+        <a id="stop-button13"><i class="bi bi-volume-mute"></i></a>
+
+      </ul>
+    </div>
+    <div class="Containers">
+      <div class="Captiontext">Escena 4</div>
+      <div style="text-align:center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <!-- Add more dots here -->
+      </div>
+      <img src="./escenarioscodigo/escenario4/bg4.png" class="img4-1" alt="...">
+      <img src="./escenarioscodigo/escenario4/nubess.png" class="img4-2" alt="...">
+      <img src="./escenarioscodigo/escenario4/cascada1.png" class="img4-3" alt="...">
+      <img src="./escenarioscodigo/escenario4/rio1.png" class="img4-5" alt="...">
+      <img src="./escenarioscodigo/escenario4/gusanos.png" class="img4-6" alt="...">
+      <img src="./escenarioscodigo/escenario4/gusanos.png" class="img4-7" alt="...">
+      <img src="./escenarioscodigo/escenario4/1.png" class="img4-9 " alt="...">
+      <img src="./escenarioscodigo/escenario4/2.png" class="img4-10 " alt="...">
+      <img src="./escenarioscodigo/escenario4/3.png" class="img4-11 " alt="...">
+      <div class="wlk2">
+        <div class="character2"></div>
+      </div>
+      <div class="wlk22 ">
+        <div class="character22 oculto"></div>
+      </div>
+      <img src="./escenarioscodigo/escenario4/nubehumo1.png" class="img4-12" alt="...">
+      <div class="icon icon1"></div>
+      <div class="icon icon2"></div>
+      <div class="circulo4"></div>
+      <audio controls class="audio4 oculto">
+        <source src="escenarioscodigo/escenario4/waterfall.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls class="audio43 oculto">
+        <source src="escenarioscodigo/escenario4/punch.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls class="audio42 oculto">
+        <source src="escenarioscodigo/escenario4/ough.mp3" type="audio/mpeg">
+      </audio>
+      <ul class="button">
+        <a class="home" href="#"> <i class="bi bi-house-fill"></i></a>
+        <a id="play-button"><i class="bi bi-volume-up"></i></a>
+        <a id="stop-button"><i class="bi bi-volume-mute"></i></a>
+      </ul>
+    </div>
+  </div>
+  <div class="Containers">
+    <div class="Captiontext">Escena 5</div>
+    <div style="text-align:center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <!-- Add more dots here -->
+    </div>
+    <div class="img5-1" alt="..."></div>
+    <img src="./escenarioscodigo/escenario5/pueblo.png" class="img5-2" alt="...">
+    <img class="img5-3" src="./escenarioscodigo/escenario5/nb.png" alt="...">
+    <img class="img5-4 oculto" src="./escenarioscodigo/escenario5/profesor.png" alt="...">
+    <div class="circulo5"></div>
+    <audio controls class="audio5 oculto">
+      <source src="escenarioscodigo/escenario5/cough-voice-12330.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls class="audio51 oculto">
+      <source src="escenarioscodigo/escenario5/ritual.mp3" type="audio/mpeg">
+    </audio>
+    <img class="img5-5" src="./escenarioscodigo/escenario5/sick1.png" alt="...">
+    <img class="img5-6" src="./escenarioscodigo/escenario5/sick2.png" alt="...">
+    <img class="img5-7" src="./escenarioscodigo/escenario5/sick3.png" alt="...">
+    <img class="img5-8" src="./escenarioscodigo/escenario5/chiko.png" alt="...">
+    <img class="img5-9" src="./escenarioscodigo/escenario5/dengo.png" alt="...">
+    <img class="img5-10" src="./escenarioscodigo/escenario5/zikar.png" alt="...">
+    <div class="txt5 oculto">
+      <p>
+        Porqué todos están tan enfermos???!
+      </p>
+    </div>
+    <div class="txt5-2">
+      <p>
+        @#!¡¿'?
+      </p>
+    </div>
+    <div class="txt5-3">
+      <p>
+        Mientras los mosquitos están en un ritual y el pueblo enfermo llega Clyde, un científico dispuesto a
+        combatirlos.
+      </p>
+    </div>
+    <ul class="button">
+      <a class="home" href="#"> <i class="bi bi-house-fill"></i></a>
+      <a id="play-button2"><i class="bi bi-volume-up"></i></a>
+      <a id="stop-button2"><i class="bi bi-volume-mute"></i></a>
+    </ul>
+  </div>
+  <div class="Containers">
+    <div class="Captiontext">Escena 6</div>
+    <div style="text-align:center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <!-- Add more dots here -->
+    </div>
+    <img src="./escenarioscodigo/escenario6/LABORATORIO_ESC_Ft.png" class="img6-1" alt="...">
+    <img src="./escenarioscodigo/escenario6/lamparas.png" class="img6-2" alt="...">
+    <img src="./escenarioscodigo/escenario6/token1.png  " class="img6-3" alt="...">
+    <img src="./escenarioscodigo/escenario6/profesor.png" class="img6-4" alt="...">
+    <img src="./escenarioscodigo/escenario6/token.png" class="img6-5" alt="...">
+    <div class="txt6">
+      <p>
+        Quiero que vayas allí y revises el área es donde las coordenadas dicen que cayó el asteroide
+      </p>
+    </div>
+    <div class="txt6-2">
+      <p>
+        Si señor!
+      </p>
+    </div>
+    <audio controls class="audio6 oculto">
+      <source src="escenarioscodigo/escenario6/lab.mp3" type="audio/mpeg">
+    </audio>
+    <ul class="button">
+      <a class="home" href="#"> <i class="bi bi-house-fill"></i></a>
+      <a id="play-button3"><i class="bi bi-volume-up"></i></a>
+      <a id="stop-button3"><i class="bi bi-volume-mute"></i></a>
+    </ul>
+  </div>
+  <div class="Containers">
+    <div class="Captiontext">Escena 7</div>
+    <div style="text-align:center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <!-- Add more dots here -->
+    </div>
+    <img src="./escenarioscodigo/escenario7/ESC_BOSQUE-ENTRADA_Ft.png" class="img7-1" alt="...">
+    <img src="./escenarioscodigo/escenario7/token.png" class="img7-2" alt="...">
+    <img src="./escenarioscodigo/escenario7/chiko.png" class="img7-3" alt="...">
+    <img src="./escenarioscodigo/escenario7/golpeado.png" class="img7-4" alt="...">
+    <img src="./escenarioscodigo/escenario7/nubehumo1.png" class="img7-5 oculto" alt="...">
+    <img src="./escenarioscodigo/escenario7/token2.png" class="img7-6 oculto" alt="...">
+    <img src="./escenarioscodigo/escenario7/chiko2.png" class="img7-7 oculto" alt="...">
+    <div class="circulo7"></div>
+    <div class="txt7 oculto">
+      <p>OYE TU… ¡ALEJATE DE ÉL AHORA!</p>
+    </div>
+    <audio controls class="audio7 oculto">
+      <source src="escenarioscodigo/escenario7/forest.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls class="audio71 oculto">
+      <source src="escenarioscodigo/escenario7/laser.mp3" type="audio/mpeg">
+    </audio>
+    <ul class="button">
+      <a class="home" href="#"> <i class="bi bi-house-fill"></i></a>
+      <a id="play-button4"><i class="bi bi-volume-up"></i></a>
+      <a id="stop-button4"><i class="bi bi-volume-mute"></i></a>
+    </ul>
+  </div>
+  <div class="Containers">
+    <div style="text-align:center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <!-- Add more dots here -->
+    </div>
+    <img src="./escenarioscodigo/escenario8/ESC_BOSQUE_METEORO_Ft.png" class="img8-1" alt="...">
+    <img onclick="cambiar()" src="./escenarioscodigo/escenario8/tokenn.png" class="img8-3" alt="...">
+    <img src="./escenarioscodigo/escenario8/dengo.png" class="img8-4 " alt="...">
+    <img src="./escenarioscodigo/escenario8/zikario.png" class="img8-5 " alt="...">
+    <img src="./escenarioscodigo/escenario8/nubess.png" class="img8-6" alt="...">
+    <img src="./escenarioscodigo/escenario8/piso.png" class="img8-7" alt="...">
+    <img src="./escenarioscodigo/escenario8/cebo.png" class="img8-8" alt="...">
+    <img src="./escenarioscodigo/escenario8/ataka.png" class="img8-9 oculto" alt="...">
+    <img src="./escenarioscodigo/escenario8/atrapada.png" class="img8-10 oculto" alt="...">
+    <img src="./escenarioscodigo/escenario8/atrapado.png" class="img8-11 oculto" alt="...">
+    <div class="Captiontext">Escena 8</div>
+    <img src="escenarioscodigo/escenario8/wat.png" class="wat2 oculto">
+    <div class="circulo8"></div>
+    <audio controls class="audio81 oculto">
+      <source src="escenarioscodigo/escenario8/laser.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls class="audio83 oculto">
+      <source src="escenarioscodigo/escenario8/falling.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls class="audio82 oculto">
+      <source src="escenarioscodigo/escenario8/lol.mp3" type="audio/mpeg">
+    </audio>
+    <div class="txt8 oculto">
+      <p>“Ni uno,
+        ni dos,
+        ni tres…
+        Sino a tres”!
+      </p>
+    </div>
+    <ul class="button">
+      <a class="home" href="#"> <i class="bi bi-house-fill"></i></a>
+      <a id="play-button5"><i class="bi bi-volume-up"></i></a>
+      <a id="stop-button5"><i class="bi bi-volume-mute"></i></a>
+    </ul>
+  </div>
+  <div class="Containers">
+    <div class="Captiontext">Escena 9</div>
+    <div style="text-align:center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <!-- Add more dots here -->
+    </div>
+    <img src="./escenarioscodigo/escenario9/LABORATORIO_ESC_Ft.png" class="img9-1" alt="...">
+    <img src="./escenarioscodigo/escenario9/lamparas.png" class="img9-2" alt="...">
+    <img src="./escenarioscodigo/escenario9/profesor.png" class="img9-3 oculto" alt="...">
+    <img src="./escenarioscodigo/escenario9/token.png" class="img9-4 oculto" alt="...">
+    <img src="./escenarioscodigo/escenario9/chiko.png" class="img9-5" alt="...">
+   
+    <div class="circulo9"></div>
+    <audio controls class="audio9 oculto">
+      <source src="escenarioscodigo/escenario9/lab.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls class="audio92 oculto">
+      <source src="escenarioscodigo/escenario9/heheh.mp3" type="audio/mpeg">
+    </audio>
+    <div class="txt9 oculto">
+      <p>Lo hiciste muy bien.<br>
+        lograste salvar el mundo
+
+      </p>
+    </div>
+    <ul class="button">
+      <a class="home" href="#"> <i class="bi bi-house-fill"></i></a>
+      <a id="play-button6"><i class="bi bi-volume-up"></i></a>
+      <a id="stop-button6"><i class="bi bi-volume-mute"></i></a>
+    </ul>
+  </div>
+  <div class="Containers">
+    <div class="Captiontext">Escena 10</div>
+    <div style="text-align:center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <!-- Add more dots here -->
+    </div>
+    <div class="img10-1"></div>
+    <img src="./escenarioscodigo/escenario10/pueblo.png" class="img10-2" alt="...">
+    <img src="./escenarioscodigo/escenario10/profesor.png" class="img10-3" alt="...">
+    <img src="./escenarioscodigo/escenario10/token.png" class="img10-4" alt="...">
+    <img class="img10-5" src="./escenarioscodigo/escenario10/sick1.png" alt="...">
+    <img class="img10-6" src="./escenarioscodigo/escenario10/sick2.png" alt="...">
+    <img class="img10-7" src="./escenarioscodigo/escenario10/sick3.png" alt="...">
+    <img class="img10-8" src="./escenarioscodigo/escenario10/nubess.png" alt="...">
+    <img class="img10-9" src="./escenarioscodigo/escenario10/antidoto.png" alt="...">
+    <img class="img10-10" src="./escenarioscodigo/escenario10/cura.png" alt="...">
+    <img class="img10-11" src="./escenarioscodigo/escenario10/antidoto.png" alt="...">
+    <img class="img10-12" src="./escenarioscodigo/escenario10/cura.png" alt="...">
+    <img class="img10-13" src="./escenarioscodigo/escenario10/antidoto.png" alt="...">
+    <img class="img10-14" src="./escenarioscodigo/escenario10/cura.png" alt="...">
+    <img class="img10-15 oculto" src="./escenarioscodigo/escenario10/curaos.png" alt="...">
+    <img class="img10-16 oculto" src="./escenarioscodigo/escenario10/tokenjapi.png" alt="...">
+    <img class="img10-17 oculto" src="./escenarioscodigo/escenario10/profesor2.png" alt="...">
+    <audio controls class="audio10 oculto">
+      <source src="escenarioscodigo/escenario10/inyectar.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls class="audio101 oculto">
+      <source src="escenarioscodigo/escenario10/japis.mp3" type="audio/mpeg">
+    </audio>
+    <div class="txt10 oculto">
+      <p>
+
+        Clyde y Token atendieron con el antidoto a las personas que estaban enfermas y mal heridas por los ataques de
+        los mosquitos y ahora el pueblo recuperará su tranquilidad.
+        <br>
+        La gente celebra la victoria
+        (KAMPAI!!)
+
+      </p>
+    </div>
+    <div class="circulo10"></div>
+    <ul class="button">
+      <a class="home" href="#"><i class="bi bi-house-fill"></i></a>
+      <a id="play-button7"><i class="bi bi-volume-up"></i></a>
+      <a id="stop-button7"><i class="bi bi-volume-mute"></i></a>
+    </ul>
+  </div>
+  <!-- Add more slides here -->
+
+
+  <!-- Dots -->
+  <!--   <div style="text-align:center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+     Add more dots here -->
+
+
+  <!-- Forward and back buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  <!--    <div class="slideContainer">
+        <div class="flechas">
+            <i id="izq">Izq</i>
+            <i id="der">Der</i>
+        </div>
+        <div class="slide-items">
+            <div class="item">
+            </div>
+        </div>
+    </div> -->
+
+  <script src="app.js"></script>
+</body>
+
+</html>
