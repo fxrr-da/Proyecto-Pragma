@@ -65,6 +65,7 @@ var audio92 = document.querySelector('.audio92');
 var audio10 = document.querySelector('.audio10');
 var audio101 = document.querySelector('.audio101');
 var walk1 = document.querySelector('.wlk1');
+var walk22 = document.querySelector('.wlk22');
 var character = document.querySelector('.character');
 var character22 = document.querySelector('.character22');
 var txt = document.querySelector('.txt-1');
@@ -294,7 +295,8 @@ function start4() {
   audio42.volume = 0.5
   setTimeout(function () {
     character22.classList.remove('oculto');
-  }, 4000);
+    walk22.style.animationPlayState = "running";
+  }, 3500);
   circulo4.style.display = 'none';
   circulo4.classList.remove('oculto');
 }
@@ -305,7 +307,7 @@ function start2() {
   circulo5.classList.remove('oculto');
   setTimeout(function () {
     txt5.classList.remove('oculto');
-  }, 4000);
+  }, 3000);
   setTimeout(function () {
     audio5.play()
   }, 10);

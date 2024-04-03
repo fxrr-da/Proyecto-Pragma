@@ -623,11 +623,12 @@
 
 .img4-12 {
   position: absolute !important;
-  top: 10rem;
+  top: 5%;
   left: 32rem;
   width: 25rem;
-  animation: metado 3s ease forwards, fighter 5s forwards 6s;
+  /* animation: metado 3s ease forwards; */
 }
+/*, fighter 5s forwards 6s;*/
 
 @keyframes fighter {
   0% {
@@ -658,7 +659,7 @@
 
   70% {
     opacity: 1;
-    transform: scale(17rem);
+    transform: scale(17%);
   }
 
   100% {
@@ -767,16 +768,11 @@
 
 .character22 {
   z-index: 111;
-  top: 25rem;
-  left: 50rem;
+  top: 14rem;
+  left: 38rem;
   position: absolute;
-  width: 78px;
-  /* Ancho de cada cuadro de animación */
-  height: 90px;
-  /* Alto de cada cuadro de animación */
-  background-image: url('escenarioscodigo/escenario4/npc-frontal.png');
   animation: walk21 2s steps(8) infinite;
-  /* La animación se repetirá infinitamente */
+  animation-play-state: paused;
 }
 
 @keyframes walk21 {
@@ -794,20 +790,16 @@
 
 .wlk22 {
   position: absolute;
-  animation: camino-un3 6s ease forwards infinite;
+  animation: camino-un3 6s ease forwards;
 }
 
 @keyframes camino-un3 {
-  0% {
-    transform: translate(-2rem, -10rem);
-  }
-
   50% {
-    transform: translate(-4rem, -5rem);
+    transform: translate(2rem, 5rem);
   }
 
   100% {
-    transform: translate(-4rem, 2rem);
+    transform: translate(1rem, 8rem);
   }
 }
 
@@ -893,19 +885,7 @@
   top: 8rem;
   left: 25rem;
   z-index: 1;
-  animation: walkn 3s ease forwards;
 }
-
-@keyframes walkn {
-  0% {
-    transform: translateY(0rem);
-  }
-
-  100% {
-    transform: translateY(1rem);
-  }
-}
-
 .img5-5 {
   position: absolute;
   width: 15rem;
@@ -2167,4 +2147,1356 @@
   margin-top: 0.1rem;
   animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 1.5s;
+}
+@media (max-width: 1366px) {
+  .circulo1 {
+    cursor: pointer;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: solid blue 4px;
+    position: absolute;
+    top: 17.8rem;
+    left: 7.7rem;
+    z-index: 1;
+    animation: atención 1.5s ease alternate infinite;
+  }
+  .txt-1{
+    top: 12.8rem;
+    left: 44rem;
+  }
+  .img1-3 {
+    width: 15rem;
+    position: absolute !important;
+    top: 18rem;
+    left: 8rem;
+    animation: scale-down 1.5s linear both infinite;
+  }
+  
+  @keyframes shoke {
+    0% {
+      transform: translate(30rem, -20rem);
+      opacity: 0;
+    }
+  
+    90% {
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translate(-58rem, 13rem);
+      opacity: 1;
+    }
+  }
+  .circulo2 {
+    cursor: pointer;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: solid blue 4px;
+    position: absolute;
+    top: 25rem;
+    left: 14rem;
+    z-index: 1;
+    animation: atención 1.5s ease alternate infinite;
+  }
+  
+  
+  .img2-6 {
+    cursor: pointer;
+    position: absolute !important;
+    width: 20rem;
+    top: 15rem;
+    left: 7rem;
+    animation: pulsate-fwd 1.8s ease-in-out infinite both;
+  }
+  .img2-8 {
+    background-image: url(escenarioscodigo/escenario2/cielo.png);
+    position: absolute;
+    width: 100%;
+    height: 25rem;
+    top: 7rem;
+    border-radius: 2rem;
+  }
+  .img2-5 {
+    position: absolute !important;
+    width: 90rem;
+    left: 10rem;
+    top: 20rem;
+    animation: wak 3s linear forwards;
+    animation-play-state: paused;
+  }
+  @keyframes wak {
+
+    100% {
+  
+      transform: translate(-1rem, -5rem);
+    }
+  
+  }
+  @keyframes pasar {
+    0% {
+      transform: translate(20rem, 12rem);
+      opacity: 0;
+    }
+  
+    70% {
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translate(-70rem, 14rem);
+      opacity: 1;
+    }
+    
+  }
+  .character {
+    z-index: 111;
+    top: 25rem;
+    left: 25rem;
+    position: absolute;
+    width: 90px;
+    /* Ancho de cada cuadro de animación */
+    height: 135px;
+    /* Alto de cada cuadro de animación */
+    background-image: url('escenarioscodigo/escenario3/caminado-npc.png');
+    animation: walk 1.2s steps(4) infinite;
+    /* La animación se repetirá infinitamente */
+  }
+  .circulo3 {
+    cursor: pointer;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: solid blue 4px;
+    position: absolute;
+    top: 25rem;
+    left: 42rem;
+    z-index: 1;
+    animation: atención 1.5s ease alternate infinite;
+  }
+  @keyframes camino-uno {
+    0% {
+      top: -6rem;
+      left: 20rem;
+      transform: scale(1.2);
+    }
+  
+    50% {
+      top: -5rem;
+      left: 30rem;
+      transform: scale(1.1);
+    }
+  
+    82% {
+      opacity: 1;
+      top: 1rem;
+      left: 65rem;
+      transform: scale(0.8);
+    }
+  
+    100% {
+      top: 10rem;
+      left: 75rem;
+      transform: scale(0.5);
+  
+    }
+  }
+  
+  .txt3 {
+    position: absolute;
+    top: 16rem;
+    left: 45rem;
+    z-index: 1;
+    width: 5rem;
+    border-radius: 2rem;
+    animation: mov 1.5s linear forwards;
+  }
+  
+  @keyframes mov {
+    to {
+      left: 50rem;
+      opacity: 0;
+    }
+  
+  }
+ .character2 {
+  z-index: 111;
+  top: 22rem;
+  left: 10rem;
+  position: absolute;
+  width: 80px;
+  /* Ancho de cada cuadro de animación */
+  height: 135px;
+  /* Alto de cada cuadro de animación */
+  background-image: url('escenarioscodigo/escenario4/caminado-npc.png');
+  animation: walk2 2s steps(8) infinite, fight2 2s forwards 5s;
+  /* La animación se repetirá infinitamente */
+}
+
+@keyframes walk2 {
+  from {
+    background-position-x: 0;
+  }
+
+  /* Comenzamos desde el primer cuadro */
+  to {
+    background-position-x: -1935px;
+  }
+
+  /* Terminamos en el último cuadro */
+}
+
+.wlk2 {
+  position: absolute;
+  animation: camino-un2 6s ease forwards;
+}
+
+@keyframes camino-un2 {
+
+  0% {
+    top: 1rem;
+    left: 7rem;
+    transform: scale(1.3);
+    opacity: 0;
+  }
+49%{
+  opacity: 0;
+}
+  50% {
+    opacity: 1;
+    top: 8rem;
+    left: 28rem;
+    transform: scale(0.9);
+  }
+
+  100% {
+    top: 8rem;
+    left: 30rem;
+    transform: scale(0.7);
+  }
+}
+.character22 {
+  z-index: 111;
+  top: 14rem;
+  left: 38rem;
+  position: absolute;
+  animation: walk21 2s steps(8) infinite;
+  animation-play-state: paused;
+}
+
+@keyframes walk21 {
+  from {
+    background-position-x: 0;
+  }
+
+  /* Comenzamos desde el primer cuadro */
+  to {
+    background-position-x: -1930px;
+  }
+
+  /* Terminamos en el último cuadro */
+}
+
+.wlk22 {
+  position: absolute;
+  animation: camino-un3 6s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes camino-un3 {
+  50% {
+    transform: translate(2rem, 5rem);
+  }
+99%{
+  opacity: 1;
+}
+  100% {
+    opacity: 0;
+    transform: translate(1rem, 8rem);
+  }
+}
+.img4-2 {
+  position: absolute !important;
+  top: 7.6rem;
+  width: 50rem;
+  height: 6rem;
+  animation: pasando 4s infinite ease alternate;
+}
+
+@keyframes pasando {
+
+  to {
+    transform: translateX(530px);
+  }
+}
+
+.img4-3 {
+  position: absolute !important;
+  width: 65rem;
+  top: 3rem;
+  left: 6.5rem;
+  /* animation: fall 2s infinite ease alternate; */
+}
+
+/* @keyframes fall {
+  to {
+    transform: translateY(3rem);
+  }
+} */
+
+.img4-5 {
+  position: absolute !important;
+  width: 80rem;
+  top: -5rem;
+ /*  animation: rio 3s infinite alternate; */
+}
+
+/* @keyframes rio {
+ 
+  to {
+    transform: translate(9rem, -1rem);
+  }
+}
+ */
+.img4-6 {
+  position: absolute;
+  width: 10rem;
+  top: 18rem;
+  left: 40rem;
+  animation: ew 3s ease forwards ;
+}
+
+.img4-7 {
+  position: absolute;
+  top: 18rem;
+  left: 41rem;
+  animation: ew 3s ease forwards;
+}
+
+@keyframes ew {
+  0% {
+    transform: translate(1px);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-120px, 20px);
+    opacity: 0;
+  }
+}
+
+.img4-12 {
+  position: absolute !important;
+  top: 6rem;
+  left: 25rem;
+  width: 25rem;
+  animation: metado 3s ease forwards, fighter 5s forwards 6s;
+}
+
+@keyframes fighter {
+  0% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes metado {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(17rem);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.img4-9 {
+  position: absolute !important;
+  width: 7rem;
+  top: 15rem;
+  left: 40rem;
+  animation: meta2 5s ease forwards alternate, fight2 2s forwards 5s;
+}
+
+.img4-10 {
+  position: absolute !important;
+  width: 7rem;
+  top: 15rem;
+  left: 30rem;
+  animation: meta2 5s ease forwards alternate, fight2 2s forwards 5s;
+
+}
+
+.img4-11 {
+  position: absolute !important;
+  width: 7rem;
+  top: 16rem;
+  left: 35rem;
+  animation:
+    meta2 5s ease forwards alternate, fight2 2s forwards 5s;
+}
+
+@keyframes meta2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fight2 {
+  to {
+    opacity: 0;
+  }
+}
+.circulo4 {
+  cursor: pointer;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 19rem;
+  left: 33rem;
+  z-index: 1;
+  animation: ver1 13s ease forwards, atención 1s ease alternate infinite;
+}
+.img5-1 {
+  background-image: url(escenarioscodigo/escenario2/cielo.png);
+  position: absolute;
+  width: 100%;
+  height: 30rem;
+  top: 7rem;
+  border-radius: 2rem;
+}
+
+.img5-2 {
+  position: absolute !important;
+  height: 30rem;
+  top: 7rem;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.img5-3 {
+  position: absolute;
+  width: 25rem;
+  top: 8rem;
+  height: 7rem;
+  animation: n3 4s ease-in-out alternate infinite;
+}
+
+@keyframes n3 {
+  to {
+    transform: translateX(350px);
+  }
+}
+.img5-4 {
+  position: absolute;
+  width: 34rem;
+  top: 12rem;
+  left: 20rem;
+  z-index: 1;
+}
+.txt5 {
+  position: absolute;
+  top: 22rem;
+  left: 40rem;
+  z-index: 1;
+  width: 20rem;
+  height: 3.5rem;
+  background-color: #6ab0b8;
+  border-radius: 2rem;
+}
+
+.txt5 p {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 20px;
+  animation: txt5p 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1s;
+}
+.img5-5 {
+  position: absolute;
+  width: 15rem;
+  top: 17rem;
+  left: 20rem;
+  animation: pulsate-bck 1s ease-in-out infinite both;
+}
+
+.img5-6 {
+  position: absolute;
+  width: 12rem;
+  top: 20rem;
+  left: 12rem;
+  animation: pulsate-bck 1s ease-in-out infinite both;
+}
+
+.img5-7 {
+  position: absolute;
+  width: 14rem;
+  top: 19rem;
+  left: 28rem;
+  animation: pulsate-bck 1s ease-in-out infinite both;
+}
+.txt6 {
+  position: absolute;
+  top: 12rem;
+  left: 40rem;
+  z-index: 1;
+  width: 22rem;
+  height: 6rem;
+  background-color: #6ab0b8;
+  border-radius: 2rem;
+  animation: txt6 4s ease forwards;
+}
+.img6-4 {
+  position: absolute !important;
+  top: 11rem;
+  left: 47rem;
+  width: 30rem;
+  animation: waja 3s ease forwards;
+}
+.img6-5 {
+  position: absolute !important;
+  top: 2.7rem;
+  left: 3rem;
+  width: 70rem;
+  animation: aparecer 6s ease, caminito 3s ease 5s forwards;
+}
+
+@keyframes caminito {
+  0% {
+    transform: translateX(0);
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(35rem);
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.txt6-2 {
+  position: absolute;
+  top: 25rem;
+  left: 20rem;
+  width: 6rem;
+  background-color: #6ab0b8;
+  border-radius: 2rem;
+  animation: q 5s ease, qq 2s ease 4s forwards;
+}
+.img7-2 {
+  position: absolute !important;
+  top: 4rem;
+  left: -42rem;
+  width: 70rem;
+  animation: wln 3s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes wln {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(39rem);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(39rem);
+  }
+}
+
+.circulo7 {
+  cursor: pointer;
+  height:9rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 20rem;
+  left: 35.5rem;
+  width: 9rem;
+  z-index: 1;
+  animation: atención 1s ease alternate infinite;
+}
+
+
+.img7-3 {
+  position: absolute !important;
+  top: 10rem;
+  left: -1rem;
+  width: 70rem;
+  animation: atacar 4s forwards;
+  animation-play-state: paused;
+}
+
+@keyframes atacar {
+  0% {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-10rem, 10rem);
+  }
+}
+
+.img7-4 {
+  cursor: pointer;
+  position: absolute !important;
+  top: 18rem;
+  left: 35rem;
+  width: 12rem;
+  animation: desaparece 2s ease forwards;
+  animation-delay: 2s;
+  animation-play-state: paused;
+}
+
+@keyframes desaparece {
+  to {
+    opacity: 0;
+  }
+}
+
+.img7-5 {
+  position: absolute;
+  width: 40rem;
+  top: 2rem;
+  left: 11rem;
+  animation: pelea1 6s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes pelea1 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale(20rem);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.txt7 {
+  position: absolute;
+  top: 22rem;
+  left: 6rem;
+  z-index: 1;
+  width: 20rem;
+  height: 4rem;
+  background-color: #ffff;
+  border-radius: 2rem;
+  animation: txt7 3s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes txt7 {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+}
+.img7-6 {
+  position: absolute;
+  width: 30rem;
+  top: 17rem;
+  left: 35rem;
+  animation: aparecer 5s ease;
+  animation-play-state: paused;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.img7-7 {
+  position: absolute;
+  width: 20rem;
+  top: 12rem;
+  left: 52rem;
+}
+.img8-3 {
+  cursor: pointer;
+  position: absolute !important;
+  top: -15rem;
+  left: -34rem;
+  width: 70rem;
+  animation: wlkq 10s ease-out forwards;
+}
+
+@keyframes wlkq {
+  0% {
+    transform: translateX(10rem, 1rem);
+  }
+
+  100% {
+    transform: translate(30rem, 13rem);
+  }
+}
+
+.circulo8 {
+  cursor: pointer;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 19rem;
+  left: 19rem;
+  z-index: 1;
+  animation: aparecer2 9s linear forwards, atención 1s ease alternate infinite;
+}
+
+@keyframes aparecer2 {
+  0% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.wat2 {
+  position: absolute;
+  top: 13rem;
+  right: 13rem;
+  z-index: 1;
+  width: 5rem;
+  border-radius: 2rem;
+}
+
+.img8-4 {
+  position: absolute !important;
+  width: 15rem;
+  top: 13rem;
+  right: 2rem;
+  animation: vuelito 3s ease alternate infinite, wtf 2s ease 14s forwards;
+}
+
+@keyframes wtf {
+  to {
+    transform: translateX(-18rem);
+  }
+}
+
+@keyframes trampa {
+  to {
+    transform: translateX(-18rem);
+  }
+}
+
+.img8-5 {
+  position: absolute !important;
+  width: 10rem;
+  top: 10rem;
+  right: 14rem;
+  animation: vuelito 3s ease alternate infinite, trampa 2s ease 3s forwards;
+}
+
+@keyframes vuelito {
+  0% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    transform: translateY(1rem);
+  }
+}
+
+.img8-6 {
+  position: absolute !important;
+  top: 9rem;
+  z-index: 1;
+  width: 17rem;
+  right: 1rem;
+  height: 4rem;
+  animation: passs 2s infinite ease alternate;
+}
+
+@keyframes passs {
+  from {
+    transform: translateX(-1px);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}
+.img8-8 {
+  position: absolute !important;
+  width: 3rem;
+  top: 14rem;
+  left: 2rem;
+  animation: carnada 1.11s ease-in forwards;
+  animation-delay: 2s;
+}
+
+@keyframes carnada {
+  to {
+    transform: translate(25rem, 14rem);
+  }
+}
+
+.img8-9 {
+  position: absolute;
+  width: 20rem;
+  top: 20rem;
+  left: 18rem;
+  animation: aparecer 2s ease;
+  animation-play-state: paused;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.img8-10 {
+  position: absolute;
+  width: 20rem;
+  top: 13rem;
+  left: 40rem;
+}
+
+.img8-11 {
+  position: absolute;
+  width: 20rem;
+  top: 13rem;
+  left: 60rem;
+}
+
+.txt8 {
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+  z-index: 1;
+  width: 20rem;
+  height: 6rem;
+  background-color: #ffff;
+  border-radius: 2rem;
+  animation: txt8 5s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes txt8 {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+}
+
+.txt8 p {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.img9-3 {
+  position: absolute !important;
+  top: 10em;
+  width: 30rem;
+  left: 17rem;
+}
+
+.img9-4 {
+  position: absolute !important;
+  top: 8rem;
+  left: 900px;
+  width: 60rem;
+  animation: entrada2 2.5s linear forwards;
+}
+
+@keyframes entrada2 {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-220px);
+  }
+}
+
+.img9-5 {
+  position: absolute !important;
+  top: 21rem;
+  border-radius: 2rem;
+  width: 18rem;
+  left: 6.2rem;
+  animation: levitar9 3.5s linear forwards alternate infinite;
+}
+
+@keyframes levitar9 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(3rem);
+  }
+}
+
+.txt9 {
+  position: absolute;
+  top: 21rem;
+  left: 20rem;
+  z-index: 1;
+  width: 14rem;
+  height: 5rem;
+  background-color: #6ab0b8;
+  border-radius: 2rem;
+  animation: txt9 6s ease forwards;
+}
+.img9-2{
+width: 60rem;
+top: 7rem;
+left: 12rem;
+}
+.txt9 {
+  top: 15rem;
+}
+.img9-3{
+  width: 30rem;
+  top: 12rem;
+  left: 14rem;
+  }
+.circulo9 {
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 21rem;
+  left: 10rem;
+  z-index: 1;
+  animation: atención 1s ease alternate infinite, levitar9 3.5s linear forwards alternate infinite;
+}
+.img10-1 {
+  background-image: url(escenarioscodigo/escenario10/cielo.png);
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  top: 7rem;
+  border-radius: 2rem;
+  animation: zoom 2s linear 3s forwards;
+}
+
+@keyframes zoom {
+  to {
+    top: 9rem;
+    transform: scale(1.3);
+  }
+}
+
+.img10-2 {
+  position: absolute !important;
+  height: 70vh;
+  top: 7rem;
+  border-radius: 2rem;
+  width: 100%;
+  animation: zoom 2s linear 3s forwards;
+}
+
+
+.img10-3 {
+  position: absolute !important;
+  top: 6rem;
+  left: 14rem;
+  width: 40rem;
+  z-index: 99;
+  animation: caminando 2s linear forwards, desaparece 2s ease 2s forwards;
+}
+
+@keyframes caminando {
+  to {
+    transform: translateY(-1rem);
+  }
+}
+
+.img10-4 {
+  position: absolute !important;
+  top: 11rem;
+  left: -10rem;
+  width: 60rem;
+  z-index: 99;
+  animation: caminando 2s linear forwards, desaparece 2s ease 2s forwards;
+}
+
+.img10-5 {
+  position: absolute;
+  width: 15rem;
+  top: 17rem;
+  left: 12rem;
+  animation: q1 2s linear 3s forwards, desaparece 2s linear 6s forwards;
+}
+
+.img10-6 {
+  position: absolute;
+  width: 15rem;
+  top: 18rem;
+  left: 47rem;
+  animation: q1 2s linear 3s forwards, desaparece 2s linear 6s forwards;
+}
+
+@keyframes q1 {
+  to {
+    top: 18rem;
+  }
+}
+
+.img10-7 {
+  position: absolute;
+  width: 15rem;
+  top: 12rem;
+  left: 27rem;
+  animation: q1 2s linear 3s forwards, desaparece 2s linear 6s forwards;
+}
+
+.img10-8 {
+  position: absolute !important;
+  top: 9rem;
+  width: 40rem;
+  left: 2rem;
+  height: 5rem;
+  animation: pass 8s infinite ease backwards;
+}
+
+@keyframes pass {
+  to {
+    transform: translateX(6rem);
+  }
+}
+
+.img10-10 {
+  position: absolute;
+  width: 10rem;
+  top: 18rem;
+  left: 47rem;
+  animation: ver 5.5s linear forwards, done 1s linear 6s forwards;
+}
+
+@keyframes done {
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes ver {
+  0% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 27rem;
+    left: 46rem;
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+.img10-9 {
+  position: absolute;
+  width: 10rem;
+  top: 18rem;
+  left: 47rem;
+  animation: ver 5.5s linear forwards, desaparece 2s linear 6s forwards;
+}
+
+.img10-11 {
+  position: absolute;
+  width: 10rem;
+  top: 18rem;
+  left: 27rem;
+  animation: ver 5.5s linear forwards, desaparece 2s linear 6s forwards;
+}
+
+@keyframes done {
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes ver {
+  0% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+.img10-12 {
+  position: absolute;
+  width: 10rem;
+  top: 18rem;
+  left: 27rem;
+  animation: ver 5.5s linear forwards, done 1s linear 6s forwards;
+}
+
+.img10-13 {
+  position: absolute;
+  width: 10rem;
+  top: 16rem;
+  left: 11.5rem;
+  animation: ver 5.5s linear forwards, desaparece 2s linear 6s forwards;
+}
+
+@keyframes done {
+  to {
+    transform: scale(0);
+  }
+}
+
+.img10-14 {
+  position: absolute;
+  width: 10rem;
+  top: 16rem;
+  left: 11.5rem;
+  animation: ver 5.5s linear forwards, done 1s linear 6s forwards;
+}
+
+.img10-15 {
+  position: absolute;
+  width: 25rem;
+  top: 28rem;
+  left: 20rem;
+  animation: bounce 1.3s both infinite;
+  animation-play-state: paused;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+.circulo10 {
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: solid blue 4px;
+  position: absolute;
+  top: 22rem;
+  left: 25rem;
+  z-index: 1;
+  animation: aparecer2 9s linear forwards, atención 1s ease alternate infinite;
+}
+
+.img10-16 {
+  position: absolute;
+  width: 29rem;
+  top: 30rem;
+  left: 34rem;
+  animation: bounce 1.3s both infinite;
+  animation-play-state: paused;
+}
+
+.img10-17 {
+  position: absolute;
+  width: 34rem;
+  top: 22rem;
+  left: 42rem;
+  animation: bounce 1.3s both infinite;
+  animation-play-state: paused;
+}
+
+.txt10 {
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  width: 25rem;
+  height: 12rem;
+  color: #003b60;
+  left: 30rem;
+  top: 7rem;
+  z-index: 999;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px #2b6e98;
+  font-weight: 800;
+  background-color: #8dc3e4a6;
+  border-radius: 2rem;
+}
+
+.txt10 p {
+  margin-top: 0.1rem;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1.5s;
+}
 }
