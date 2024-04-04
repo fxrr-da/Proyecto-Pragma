@@ -2042,59 +2042,50 @@
 
 .img10-15 {
   position: absolute;
-  width: 25rem;
-  top: 28rem;
-  left: 20rem;
+width: 30%;
+  left: 35%;
+  top: 320%;
   animation: bounce 1.3s both infinite;
   animation-play-state: paused;
 }
-
 @keyframes bounce {
   0% {
-    transform: translateY(-45px);
-    animation-timing-function: ease-in;
+transform: translateY(-45px);
+ animation-timing-function: ease-in;
     opacity: 1;
   }
-
   24% {
     opacity: 1;
   }
-
   40% {
-    transform: translateY(-24px);
-    animation-timing-function: ease-in;
+transform: translateY(-24px);
+animation-timing-function: ease-in;
   }
-
   65% {
-    transform: translateY(-12px);
-    animation-timing-function: ease-in;
+transform: translateY(-12px);
+animation-timing-function: ease-in;
   }
-
   82% {
-    transform: translateY(-6px);
-    animation-timing-function: ease-in;
+transform: translateY(-6px);
+animation-timing-function: ease-in;
   }
-
   93% {
-    transform: translateY(-4px);
-    animation-timing-function: ease-in;
+ transform: translateY(-4px);
+ animation-timing-function: ease-in;
   }
-
   25%,
   55%,
   75%,
   87% {
-    transform: translateY(0px);
-    animation-timing-function: ease-out;
+transform: translateY(0px);
+ animation-timing-function: ease-out;
   }
-
   100% {
-    transform: translateY(0px);
-    animation-timing-function: ease-out;
+ transform: translateY(0px);
+ animation-timing-function: ease-out;
     opacity: 1;
   }
 }
-
 .circulo10 {
   cursor: pointer;
   width: 10rem;
@@ -2104,47 +2095,136 @@
   position: absolute;
   top: 27.4rem;
   left: 35rem;
-  z-index: 1;
+  z-index: 999;
   animation: aparecer2 9s linear forwards, atención 1s ease alternate infinite;
 }
 
 .img10-16 {
   position: absolute;
-  width: 29rem;
-  top: 30rem;
-  left: 34rem;
+  width: 25%;
+  top: 390%;
+  left: 15%;
   animation: bounce 1.3s both infinite;
   animation-play-state: paused;
+}
+@keyframes bounce {
+  0% {
+transform: translateY(-45px);
+ animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+transform: translateY(-24px);
+animation-timing-function: ease-in;
+  }
+  65% {
+transform: translateY(-12px);
+animation-timing-function: ease-in;
+  }
+  82% {
+transform: translateY(-6px);
+animation-timing-function: ease-in;
+  }
+  93% {
+ transform: translateY(-4px);
+ animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+transform: translateY(0px);
+ animation-timing-function: ease-out;
+  }
+  100% {
+ transform: translateY(0px);
+ animation-timing-function: ease-out;
+    opacity: 1;
+  }
 }
 
 .img10-17 {
   position: absolute;
-  width: 34rem;
-  top: 22rem;
-  left: 42rem;
+  width: 35%;
+  top: 230%;
+  left: 2%;
   animation: bounce 1.3s both infinite;
   animation-play-state: paused;
 }
+@keyframes bounce {
+  0% {
+transform: translateY(-45px);
+ animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+transform: translateY(-24px);
+animation-timing-function: ease-in;
+  }
+  65% {
+transform: translateY(-12px);
+animation-timing-function: ease-in;
+  }
+  82% {
+transform: translateY(-6px);
+animation-timing-function: ease-in;
+  }
+  93% {
+ transform: translateY(-4px);
+ animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+transform: translateY(0px);
+ animation-timing-function: ease-out;
+  }
+  100% {
+ transform: translateY(0px);
+ animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
 
 .txt10 {
-  text-align: center;
-  font-size: 1.5rem;
-  position: relative;
-  width: 25rem;
-  height: 12rem;
-  color: #003b60;
-  left: 30rem;
-  top: 7rem;
-  z-index: 111;
-  padding: 1rem;
-  box-shadow: 5px 5px 10px #2b6e98;
-  font-weight: 800;
-  background-color: #8dc3e4a6;
+  top: 190%;
+  width: 30%;
+  height: 150%;
+  position: absolute;
+  background-color: #6ab0b8;
   border-radius: 2rem;
+  animation: txt10 4s ease forwards;
+}
+
+@keyframes txt10 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
 }
 
 .txt10 p {
-  margin-top: 0.1rem;
+  text-align: center;
+  margin-top: 1.1rem;
+  font-size: 20px;
   animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 1.5s;
 }
@@ -3391,60 +3471,7 @@ left: 12rem;
   animation: ver 5.5s linear forwards, done 1s linear 6s forwards;
 }
 
-.img10-15 {
-  position: absolute;
-  width: 25rem;
-  top: 28rem;
-  left: 20rem;
-  animation: bounce 1.3s both infinite;
-  animation-play-state: paused;
-}
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-45px);
-    animation-timing-function: ease-in;
-    opacity: 1;
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  40% {
-    transform: translateY(-24px);
-    animation-timing-function: ease-in;
-  }
-
-  65% {
-    transform: translateY(-12px);
-    animation-timing-function: ease-in;
-  }
-
-  82% {
-    transform: translateY(-6px);
-    animation-timing-function: ease-in;
-  }
-
-  93% {
-    transform: translateY(-4px);
-    animation-timing-function: ease-in;
-  }
-
-  25%,
-  55%,
-  75%,
-  87% {
-    transform: translateY(0px);
-    animation-timing-function: ease-out;
-  }
-
-  100% {
-    transform: translateY(0px);
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
 
 .circulo10 {
   cursor: pointer;
@@ -3455,48 +3482,8 @@ left: 12rem;
   position: absolute;
   top: 22rem;
   left: 25rem;
-  z-index: 1;
+  z-index: 9999;
   animation: aparecer2 9s linear forwards, atención 1s ease alternate infinite;
 }
 
-.img10-16 {
-  position: absolute;
-  width: 29rem;
-  top: 30rem;
-  left: 34rem;
-  animation: bounce 1.3s both infinite;
-  animation-play-state: paused;
-}
-
-.img10-17 {
-  position: absolute;
-  width: 34rem;
-  top: 22rem;
-  left: 42rem;
-  animation: bounce 1.3s both infinite;
-  animation-play-state: paused;
-}
-
-.txt10 {
-  text-align: center;
-  font-size: 1.5rem;
-  position: relative;
-  width: 25rem;
-  height: 12rem;
-  color: #003b60;
-  left: 30rem;
-  top: 7rem;
-  z-index: 999;
-  padding: 1rem;
-  box-shadow: 5px 5px 10px #2b6e98;
-  font-weight: 800;
-  background-color: #8dc3e4a6;
-  border-radius: 2rem;
-}
-
-.txt10 p {
-  margin-top: 0.1rem;
-  animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation-delay: 1.5s;
-}
 }
